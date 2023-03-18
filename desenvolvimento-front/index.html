@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/CSS/variaveis.css">
+    <link rel="stylesheet" href="assets/CSS/app.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/libs/boxicons/css/boxicons.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-content js-simplebar">
+                <a class="sidebar-brand" href="#">
+                    <span class="align-middle">Administrativo</span>
+                </a>
+                <ul class="sidebar-nav">
+                    <!--  -->
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#">
+                            <i class="align-middle" data-feather="home"></i> <span class="align-middle">DashBoard</span>
+                        </a>
+                    </li>
+                    <!--  -->
+                    <li class="sidebar-item ">
+                        <!-- Perfil -->
+                        <a href="#services-link" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                            <i class='align-middle bx bxs-grid'></i>
+                            <span class="align-middle">Serviços</span>
+                        </a>
+                        <ul id="services-link" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Candidatura e Matrículas</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Documentação</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">IPIS</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Relocation</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Viagens</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Vistos</a></li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="sidebar-item ">
+                        <!-- Perfil -->
+                        <a href="#commercial" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                            <i class='align-middle bx bxs-keyboard'></i>
+                            <span class="align-middle">Comercial</span>
+                        </a>
+                        <ul id="commercial" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Candidatura e Matrículas</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Documentação</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">IPIS</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Relocation</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Viagens</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Vistos</a></li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#">
+                            <i class='align-middle bx bxs-bank'></i>
+                            <span class="align-middle">Universidade</span>
+                        </a>
+                    </li>
+                    <!--  -->
+                    <!--  -->
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#">
+                            <i class='align-middle bx bx-dollar'></i>
+                            <span class="align-middle">Pagamento</span>
+                        </a>
+                    </li>
+                    <!--  -->
+                    <!--  -->
+                    <li class="sidebar-item ">
+                        <!-- Perfil -->
+                        <a href="#user" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                            <i class="align-middle" data-feather="users"></i>
+                            <span class="align-middle">Pessoas</span>
+                        </a>
+                        <ul id="user" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Candidatura e Matrículas</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Documentação</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">IPIS</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Relocation</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Viagens</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="#">Vistos</a></li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <!--  -->
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#">
+                            <i class='align-middle bx bx-list-ul'></i>
+                            <span class="align-middle">Projetos</span>
+                        </a>
+                    </li>
+                    <!--  -->
+                    <!--  -->
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#">
+                            <i class='align-middle bx bx-file'></i>
+                            <span class="align-middle">Tarefas</span>
+                        </a>
+                    </li>
+                    <!--  -->
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main">
+            <nav class="navbar navbar-expand navbar-light navbar-bg">
+                <a class="sidebar-toggle d-flex">
+                    <i class="hamburger align-self-center"></i>
+                </a>
+                <form class="d-none d-sm-inline-block">
+                    <div class="input-group input-group-navbar color-blue-primary h4">
+                        <i class='align-middle bx bx-dollar'></i>
+                        Pagamentos
+                    </div>
+                </form>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav navbar-align">
+                        <li class="nav-item dropdown">
+                            <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+                                <div class="position-relative">
+                                    <i class="align-middle" data-feather="bell"></i>
+                                    <span class="indicator"></span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0"
+                                aria-labelledby="alertsDropdown">
+                                <div class="dropdown-menu-header">
+                                    Sem notificação
+                                </div>
+                                <div class="dropdown-menu-footer">
+                                    <a href="#" class="text-muted">Todas as notificações visualizadas</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+                                data-bs-toggle="dropdown">
+                                <i class="align-middle" data-feather="settings"></i>
+                            </a>
+
+                            <a class="nav-link d-none d-sm-flex" href="#" data-bs-toggle="dropdown">
+                                <img src="assets/img/profile-pic.svg" width="48" height="48" class="rounded-circle me-2"
+                                    alt="Avatar">
+                                <div>
+                                    <span class="text-dark">
+                                        Ventura tamba
+                                    </span>
+                                    <br>
+                                    <span>
+                                        Diretor
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item"><i class="align-middle me-1" data-feather="user"></i>
+                                    Perfil</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"><i class="align-middle me-1"
+                                        data-feather="settings"></i>Configurações</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Sair</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Content Start -->
+            <main class="content">
+                <div class="container-fluid p-0">
+                    <div class="row navtab">
+                        <div class="navtab-item active col-md-4 text-center">Todos</div>
+                        <div class="navtab-item col-md-4 text-center">Clientens</div>
+                        <div class="navtab-item col-md-4 text-center">Funcionário</div>
+                    </div>
+
+                    <div class="col-md-12 d-flex gap-2 mt-4">
+                        <button class="button"><i class='bx bx-plus'></i> Novo Pagamento</button>
+                        <button class="button"><i class='bx bx-group'></i> Beneficiários</button>
+                    </div>
+
+                    <div class="row navtab-group gap-4 mt-4">
+                        <div class="navtab-item active col-md-1 text-center">Todos</div>
+                        <div class="navtab-item col-md-2 text-center">Ordinários</div>
+                        <div class="navtab-item col-md-2 text-center">Reembolso</div>
+                        <div class="navtab-item col-md-2 text-center">Compras</div>
+                        <div class="navtab-item col-md-2 text-center">Ordens e Pagamentos</div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-2">
+                            <div class="input-group">
+                                <label for="name">Nome</label>
+                                <input type="text" name="name">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="input-group">
+                                <label for="services">Serviços</label>
+                                <select id="services">
+                                    <option></option>
+                                    <option>Option</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="input-group">
+                                <label for="value">Valor</label>
+                                <input type="number" id="value">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="input-group">
+                                <label for="status">Status</label>
+                                <select id="status">
+                                    <option>Todos</option>
+                                    <option>Option</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="input-group">
+                                <label for="date-payment">Data Pagamento</label>
+                                <input type="date" id="date-payment" placeholder="dd/mm/aaaa">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="input-group">
+                                <label for="date-deadline">Data Vencimento</label>
+                                <input type="date" id="date-deadline" placeholder="dd/mm/aaaa">
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="table table-striped table-hover mt-5">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span class="d-flex align-items-center gap-1">
+                                        Nome <i class='bx bx-filter'></i>
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="d-flex align-items-center gap-1">
+                                        Valor <i class='bx bx-filter'></i>
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="d-flex align-items-center gap-1">
+                                        Serviço <i class='bx bx-filter'></i>
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="d-flex align-items-center gap-1">
+                                        Status <i class='bx bx-filter'></i>
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="d-flex align-items-center gap-1">
+                                        Pagamentos <i class='bx bx-filter'></i>
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="d-flex align-items-center gap-1">
+                                        Vencimento <i class='bx bx-filter'></i>
+                                    </span>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/first-pic-man.svg" width="48" height="48"
+                                        class="rounded-circle me-2" alt="Avatar"> Julio Alves de Souza
+                                </td>
+                                <td class="color-feedback-sucess fw-bolder">
+                                    <span class="d-flex align-items-center gap-1">
+                                        <i class='bx bx-euro'></i> 300,00
+                                    </span>
+                                </td>
+                                <td>Serviço A</td>
+                                <td>Processando</td>
+                                <td class="text-center">-</td>
+                                <td>30/08/2022</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <i class='bx bxs-coupon color-feedback-alert'></i>
+                                        <i class='bx bx-show'></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/third-pic-woman.svg" width="48" height="48"
+                                        class="rounded-circle me-2" alt="Avatar"> Alice Silva Santos
+                                </td>
+                                <td class="color-feedback-error fw-bolder">
+                                    <span class="d-flex align-items-center gap-1">
+                                        <i class='bx bx-euro'></i> 300,00
+                                    </span>
+                                </td>
+                                <td>Serviço B</td>
+                                <td>Pedente</td>
+                                <td class="text-center">-</td>
+                                <td>30/08/2022</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <i class='bx bxs-coupon color-feedback-alert'></i>
+                                        <i class='bx bx-show'></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/second-pic-man.svg" width="48" height="48"
+                                        class="rounded-circle me-2" alt="Avatar"> Bernado Fonseca
+                                </td>
+                                <td class="color-feedback-sucess fw-bolder">
+                                    <span class="d-flex align-items-center gap-1">
+                                        <i class='bx bx-euro'></i> 300,00
+                                    </span>
+                                </td>
+                                <td>Serviço A</td>
+                                <td>Processando</td>
+                                <td class="text-center">-</td>
+                                <td>30/08/2022</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <i class='bx bxs-coupon color-feedback-alert'></i>
+                                        <i class='bx bx-show'></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/second-pic-man.svg" width="48" height="48"
+                                        class="rounded-circle me-2" alt="Avatar"> Bernado Fonseca
+                                </td>
+                                <td class="color-feedback-sucess fw-bolder">
+                                    <span class="d-flex align-items-center gap-1">
+                                        <i class='bx bx-euro'></i> 300,00
+                                    </span>
+                                </td>
+                                <td>Serviço A</td>
+                                <td>Processando</td>
+                                <td class="text-center">-</td>
+                                <td>30/08/2022</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <i class='bx bxs-coupon color-feedback-alert'></i>
+                                        <i class='bx bx-show'></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/second-pic-man.svg" width="48" height="48"
+                                        class="rounded-circle me-2" alt="Avatar"> Bernado Fonseca
+                                </td>
+                                <td class="color-feedback-alert fw-bolder">
+                                    <span class="d-flex align-items-center gap-1">
+                                        <i class='bx bx-euro'></i> 300,00
+                                    </span>
+                                </td>
+                                <td>Serviço A</td>
+                                <td>Processando</td>
+                                <td class="text-center">-</td>
+                                <td>30/08/2022</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <i class='bx bxs-coupon color-feedback-alert'></i>
+                                        <i class='bx bx-show'></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/second-pic-man.svg" width="48" height="48"
+                                        class="rounded-circle me-2" alt="Avatar"> Bernado Fonseca
+                                </td>
+                                <td class="color-feedback-alert fw-bolder">
+                                    <span class="d-flex align-items-center gap-1">
+                                        <i class='bx bx-euro'></i> 300,00
+                                    </span>
+                                </td>
+                                <td>Serviço A</td>
+                                <td>Processando</td>
+                                <td class="text-center">-</td>
+                                <td>30/08/2022</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <i class='bx bxs-coupon color-feedback-alert'></i>
+                                        <i class='bx bx-show'></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/second-pic-man.svg" width="48" height="48"
+                                        class="rounded-circle me-2" alt="Avatar"> Bernado Fonseca
+                                </td>
+                                <td class="color-feedback-alert fw-bolder">
+                                    <span class="d-flex align-items-center gap-1">
+                                        <i class='bx bx-euro'></i> 300,00
+                                    </span>
+                                </td>
+                                <td>Serviço A</td>
+                                <td>Processando</td>
+                                <td class="text-center">-</td>
+                                <td>30/08/2022</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <i class='bx bxs-coupon color-feedback-alert'></i>
+                                        <i class='bx bx-show'></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+            <!-- Content End -->
+
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="assets/JS/app.js"></script>
+
+</body>
+
+</html>

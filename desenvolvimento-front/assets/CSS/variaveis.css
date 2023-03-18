@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --brand-primary-light: #F4F9FF;
+    --brand-primary-default: #2678C2;
+    --brand-primary-dark: #0F304E;
+
+    --brand-secondary-light: #292A2C;
+    --brand-secondary-default: #FBA409;
+    --brand-secondary-dark: #976205;
+
+    --neutral-hight-pure: #FFFFFF;
+    --neutral-hight-light: #F1F3F5;
+    --neutral-hight-medium: #E9ECEF;
+    --neutral-hight-dark: #DEE2E6;
+    --neutral-hight-darkest: #CED4DA;
+
+    --neutral-low-pure: #000000;
+    --neutral-low-darkest: #343A40;
+    --neutral-low-dark: #495057;
+    --neutral-low-medium: #868E96;
+    --neutral-low-light: #ADB5BD;
+
+    --feedback-information-light: #F4F9FF;
+    --feedback-information-default: #2678C2;
+    --feedback-information-dark: #0F304E;
+
+    --feedback-success-light: #F1FCF1;
+    --feedback-success-default: #4ED34E;
+    --feedback-success-dark: #269224;
+
+    --feedback-alert-light: #FFFBF0;
+    --feedback-alert-default: #FDCA44;
+    --feedback-alert-dark: #C18E07;
+
+    --feedback-error-light: #FDF0F0;
+    --feedback-error-default: #FF1835;
+    --feedback-error-dark: #8F0D1E;
+
+    --roboto: 'Roboto', sans-serif;
+
+}
+
+body {
+    background: var(--brand-primary-light);
+}
+
+.color-blue-primary {
+    color: var(--brand-primary-default) !important;
+}
+
+.color-feedback-sucess {
+    color: var(--feedback-success-dark);
+}
+
+.color-feedback-error {
+    color: var(--feedback-error-dark);
+}
+
+.color-feedback-alert {
+    color: var(--feedback-alert-default);
+}
+
+.button {
+    position: relative;
+    border: none;
+    background-color: var(--brand-primary-default);
+    padding: 10px 20px;
+    color: var(--brand-primary-light);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.button:hover::before {
+    opacity: 1;
+}
